@@ -61,8 +61,8 @@ a {
     position: relative;
   }
   .banner-desc {
-  	width: 50%;
-  	font-size: 1.1em;
+    width: 50%;
+    font-size: 1.1em;
   }
   .banner-btn {
     position: absolute;
@@ -73,31 +73,40 @@ a {
 @media only screen and (min-width: 60em) {
   .banner-title {
     font-size: 2.2em;
-    line-height: 1em;
+    line-height: 0;
   }
   .banner {
     max-height: 500px;
   }
   .banner-content {
-  	position: absolute;
-  	bottom: 0;
+    position: absolute;
+    bottom: 0;
   }
   .banner-btn {
   padding: .5em;
-  border: 1px black;
-  display: inline-block;
   border: 4px solid #FFFFFF;
   right: 2em;
   font-size:1.15em;
+  top: 20%;
   }
   .banner-desc {
-  	width: 50%;
-  	font-size: 1.2em;
+    width: 50%;
+    font-size: 1.2em;
   }
   .banner-content {
     background-image: linear-gradient(to bottom, rgba(73, 85, 98, 0), rgba(73, 85, 98, .9) 80%);
     position: absolute;
     bottom: 0;
     width: 100%;
+    padding: 1em .75em;
+  }
+}
+@media only screen and (min-width: 90em) {
+  .banner-content-inner {
+    max-width: 70em;
+    margin: auto;
+  }
+  .banner-desc {
+    font-size: 1.35em;
   }
 }
