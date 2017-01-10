@@ -3,21 +3,23 @@
 @-o-viewport { width: device-width; scale: 1; }
 @-webkit-viewport { width: device-width; scale: 1; }
 @viewport { width: device-width; scale: 1; }
+
 html {
   box-sizing: border-box;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
-
-  color: #FFFFFF;
+  color: #fff;
   font-family: Georgia, serif;
   font-size: 100%;
   line-height: 1.5;
 }
+
 img {
   width: 100%;
 }
+
 .img-flex {
   display: block;
   width: 100%;
@@ -26,6 +28,7 @@ img {
 body {
   margin: 0;
 }
+
 a {
   text-decoration: none;
   color: white;
@@ -40,59 +43,63 @@ a {
 .banner-content {
   padding: 1.5em .75em;
 }
+
 .banner-title {
   margin: 0;
-  font-size: 1.4em;
+  font-size: 1.3em;
+  line-height: 1em;
 }
+
 .banner-btn {
-  padding: .5em 1em;
-  border: 1px black;
+  padding: .25em 1em;
   display: inline-block;
   border: 4px solid #97a49b;
   border-radius: .3em;
   font-weight: bold;
 }
 
+.btn:hover {
+  background-color: grey;
+}
+
+.banner-desc {
+  font-size: 1em;
+  line-height: 1.4em;
+}
+
 @media only screen and (min-width: 38em) {
+
   .banner-title {
     font-size: 2em;
   }
+
   .banner-content-inner {
     position: relative;
   }
+
   .banner-desc {
     width: 50%;
     font-size: 1.1em;
   }
+
   .banner-btn {
     position: absolute;
-    right: 0em;
+    right: 0;
     top: 40%;
   }
 }
+
 @media only screen and (min-width: 60em) {
+
   .banner-title {
     font-size: 2.2em;
     line-height: 0;
   }
+
   .banner {
     max-height: 500px;
   }
-  .banner-content {
-    position: absolute;
-    bottom: 0;
-  }
-  .banner-btn {
-  padding: .5em;
-  border: 4px solid #FFFFFF;
-  right: 2em;
-  font-size:1.15em;
-  top: 20%;
-  }
-  .banner-desc {
-    width: 50%;
-    font-size: 1.2em;
-  }
+
   .banner-content {
     background-image: linear-gradient(to bottom, rgba(73, 85, 98, 0), rgba(73, 85, 98, .9) 80%);
     position: absolute;
@@ -100,12 +107,28 @@ a {
     width: 100%;
     padding: 1em .75em;
   }
+
+  .banner-btn {
+    padding: .5em;
+    border: 4px solid #fff;
+    right: 2em;
+    font-size: 1.15em;
+    top: 20%;
+  }
+
+  .banner-desc {
+    width: 50%;
+    font-size: 1.2em;
+  }
 }
+
 @media only screen and (min-width: 90em) {
+
   .banner-content-inner {
     max-width: 70em;
     margin: auto;
   }
+
   .banner-desc {
     font-size: 1.35em;
   }
