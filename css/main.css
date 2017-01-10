@@ -33,7 +33,10 @@ a {
 
 .banner {
   background-color: #495562;
+  overflow: hidden;
+  position: relative;
 }
+
 .banner-content {
   padding: 1.5em .75em;
 }
@@ -66,3 +69,35 @@ a {
     right: 1em;
     top: 45%;
   }
+}
+@media only screen and (min-width: 60em) {
+  .banner-title {
+    font-size: 2.2em;
+    line-height: 1em;
+  }
+  .banner {
+    max-height: 500px;
+  }
+  .banner-content {
+  	position: absolute;
+  	bottom: 0;
+  }
+  .banner-btn {
+  padding: .5em;
+  border: 1px black;
+  display: inline-block;
+  border: 4px solid #FFFFFF;
+  right: 2em;
+  font-size:1.15em;
+  }
+  .banner-desc {
+  	width: 50%;
+  	font-size: 1.2em;
+  }
+  .banner-content {
+    background-image: linear-gradient(to bottom, rgba(73, 85, 98, 0), rgba(73, 85, 98, .9) 80%);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}
